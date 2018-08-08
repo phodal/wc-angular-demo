@@ -4,6 +4,7 @@ import './App.css';
 
 class App extends Component {
   action = event => {
+    console.log("00000");
     console.log(event);
   };
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-            <interact-bar action={this.action}></interact-bar>
+            <interact-bar filename="phodal.com" onAction={this.action}></interact-bar>
         </p>
       </div>
     );
