@@ -1,0 +1,8 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" #renameForm="ngForm">
+    <div class="form-group">
+      <label for="name">New Name</label>
+      <input type="text" class="form-control" autofocus id="name" name="rename" [(ngModel)]="renameModel.name" required>
+    </div>
+  </form>
+</div>

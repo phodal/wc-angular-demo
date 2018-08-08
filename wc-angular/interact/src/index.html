@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Interact</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<interact-bar label='first'></interact-bar>
+</body>
+<script>
+  const bar = document.querySelector('interact-bar');
+  console.log(bar);
+  bar.addEventListener('action', (event) => {
+    console.log(`"action" emitted: ${event.detail}`);
+  });
+  setTimeout(() => bar.label = 'Second Value', 3000);
+</script>
+</html>
